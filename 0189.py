@@ -21,16 +21,16 @@ class Solution:
         nums[l], nums[r] = nums[r], nums[l]
         l, r = l + 1, r - 1
 
-      print(nums)
-
 solution = Solution()
 
 # case 1
 nums = [1,2,3,4,5,6,7]
 k = 3
 solution.rotate(nums, k)
+print(nums)
 
 # case 2
 nums = [-1,-100,3,99]
 k = 2
 solution.rotate(nums, k)
+print(nums)
