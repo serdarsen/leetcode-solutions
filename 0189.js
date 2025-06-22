@@ -6,7 +6,7 @@
 var rotate = function(nums, k) {
   k = k % nums.length;
   let l = 0;
-  r = nums.length - 1;
+  let r = nums.length - 1;
   while (l < r) {
     [nums[l], nums[r]] = [nums[r], nums[l]];
     l++;
