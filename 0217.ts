@@ -1,12 +1,5 @@
-/**
- * Hash Set - Early Exit
- * Time O(N) | Space O(N)
- * https://leetcode.com/problems/contains-duplicate/
- * @param {number[]} nums
- * @return {boolean}
- */
-var containsDuplicate = function(nums) {
-  const set = new Set();
+function containsDuplicate(nums: number[]): boolean {
+  const set = new Set<number>();
   for (const num of nums) {
     if (set.has(num)) {
       return true;
@@ -14,15 +7,15 @@ var containsDuplicate = function(nums) {
     set.add(num);
   }
   return false;
-};
+}
 
 export {
   containsDuplicate
 }
 
 // case 1
-let nums = [1,2,3,1];
-let result = containsDuplicate(nums);
+let nums: number[] = [1,2,3,1];
+let result: boolean = containsDuplicate(nums);
 console.log(result);
 
 // case 2
