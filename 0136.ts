@@ -1,22 +1,18 @@
-/**
- * @param {number[]} nums
- * @return {number}
- */
-var singleNumber = function(nums) {
+function singleNumber(nums: number[]): number {
   let res = 0;
   for (const n of nums) {
     res = res ^ n;
   }
   return res;
-};
+}
 
 export {
   singleNumber
 }
 
 // case 1
-let nums = [2,2,1];
-let result = singleNumber(nums);
+let nums: number[] = [2,2,1];
+let result: number = singleNumber(nums);
 console.log(result);
 
 // case 2
