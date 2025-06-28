@@ -5,16 +5,11 @@ class Solution:
         # two pointer solution
         nums1 = sorted(nums1)
         nums2 = sorted(nums2)
-
         p1 = 0
         p2 = 0
-
-        n = len(nums1)
-        m = len(nums2)
-
         result = []
 
-        while p1 < n and p2 < m:
+        while p1 < len(nums1) and p2 < len(nums2):
           if nums1[p1] == nums2[p2]:
             result.append(nums1[p1])
             p1 += 1
