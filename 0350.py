@@ -16,10 +16,10 @@ class Solution:
             p2 += 1
             continue
 
-          if nums1[p1] > nums2[p2]:
-            p2 += 1
-          else:
+          if nums1[p1] < nums2[p2]:
             p1 += 1
+          else:
+            p2 += 1
 
         return result
 
