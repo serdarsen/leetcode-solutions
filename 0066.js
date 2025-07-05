@@ -25,6 +25,10 @@ var plusOne = function(digits) {
   return digits;
 };
 
+export {
+  plusOne
+}
+
 // case 1
 let digits = [1, 2, 3];
 let result = plusOne(digits);
