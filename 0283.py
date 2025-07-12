@@ -15,9 +15,9 @@ class Solution:
 solution = Solution()
 
 # case 1
-digits = [0, 1, 0, 3, 12]
-solution.moveZeroes(digits) # [1, 3, 12, 0, 0]
+nums = [0, 1, 0, 3, 12]
+solution.moveZeroes(nums) # [1, 3, 12, 0, 0]
 
 # case 2
-digits = [0]
-solution.moveZeroes(digits) # [0]
+nums = [0]
+solution.moveZeroes(nums) # [0]
